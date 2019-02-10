@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Katie Ledecky</title>
+        
+        <!-- animation on scroll-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.typekit.net/izf4pur.css">
+
+
+
+		<!--scroll magic crap-->
+		<script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+		<script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+
+    
+
+        
+        <script>
+			//the filter on hover thing i wrote
+		$(document).ready(function(){
+			$("#videovideo").mouseover(function(){
+				$("#videovideo").css("filter", "none");
+				$("#videovideo").css("-webkit-filter", "none");
+			});
+			$("#videovideo").mouseout(function(){
+				$("#videovideo").css("filter", "grayscale(100%)");
+				$("#videovideo").css("-webkit-filter", "grayscale(100%)");
+			});
+			
+			
+            //mobile navbar
+            $('.first-button').on('click', function () {
+				$('.animated-icon1').toggleClass('open');
+            });
+            $('.second-button').on('click', function () {
+				$('.animated-icon3').toggleClass('open');
+          	});
+            $('.third-button').on('click', function () {
+				$('.animated-icon4').toggleClass('open');
+          	});
+			
+			//video delay
+			setTimeout(function(){
+				$("#videovideo")[0].load();
+				$("#videovideo")[0].play();
+			}, 2000)
+			
+			
+			//IMPORTANT SMOOTH SCROLL THINGS
+			// Add smooth scrolling to all links
+		  	$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  		event.preventDefault();
+
+			  // Store hash
+			  		var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  		$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+			  		});
+				} // End if
+		  	});
+
+		});
+  		
+
+  
+
+		</script>
+            
+        
+ 
+
+        
+        
+        
+    </head>
+    
+    <body>
+        
+       
+        
+        <div class="container-fluid" id="sectionone">
+            <div class="container-fluid" id="header">
+                <div class="container-fluid" id="logo">
+           	    	<a href="http://www.tyr.com"><img src="img/logo.png" width="94" height="36" alt="logo"/></a> </div>
+                <ul id="uldesktop">
+                    <!--<a href="#sectionone"><li class="hvr-underline-reveal">COMPETITION</li></a>
+                    <a href="#sectiontwo"><li class="hvr-underline-reveal">FLOW</li></a>
+                    <a href="#sectionthree"><li class="hvr-underline-reveal">COMMITMENT</li></a>
+                    <a href="#sectionfour"><li class="hvr-underline-reveal">STRENTH</li></a>
+					<a href="#sectionfive"><li class="hvr-underline-reveal">POSITIVITY</li></a>
+                    <a href="#sectionsixbig"><li class="hvr-underline-reveal">FOCUS</li></a>
+                    <a href="#sectionseven"><li class="hvr-underline-reveal">PERFORMANCE</li></a>-->
+					<nav class="navbar navbar-dark red lighten-1 mb-4">
+
+                    <!-- Navbar brand -->
+
+                      <!-- Collapse button -->
+                      <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+                        aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon3"><span></span><span></span><span></span><span></span></div>
+                      </button>
+
+                      <!-- Collapsible content -->
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionone">COMPETITION</a>
+                          </li>
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectiontwo">FLOW</a>
+                          </li>
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionthree">COMMITMENT</a>
+                          </li>
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionfour">STRENTH</a>
+                          </li>
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionfive">POSITIVITY</a>
+                          </li>
+                          <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionsixbig">FOCUS</a>
+                          </li>
+						  <li class="hvr-underline-reveal nav-item">
+                            <a class="nav-link" href="#sectionseven">PERFORMANCE</a>
+                          </li>
+                           
+                        </ul>
+                        <!-- Links -->
+
+                      </div>
+                      <!-- Collapsible content -->
+
+                    </nav>
+                    <!--/.Navbar-->
+                </ul>
+                
+                
+                
+                
+            </div>
+            
+            <div class="container-fluid css-typing" id="video">
+                <video id="videovideo" preload="none" muted loop height="650" width="auto">
+                    <source src="oly16_sw_trials_ledeckyfeature_1606271467073178839_1400k.mp4" 
+                    type="video/mp4;"/>
+                    
+                
+                </video>
+                
+                <div class="typewriter">
+                    <h1 class="type1" id="texthover">I'm Katie Ledecky</h1>
+              
+          
+            
+                </div>
+        
+        
+            </div>
+    
+        </div>
+       
+		
+		
+		
+		
+		
+		
+		<!--scrollmagic scroll parallax-->     
+		<style type="text/css">
+			.parallaxParent {
+				height:110vh;
+				width:100%;
+				overflow:hidden;
+			}
+			.parallaxParent > * {
+				height:120%;
+				position:relative;
+				top:-45%;
+			}
+			
+			#parallax2{
+				height:80vh;
+			}
+			
+			#parallax2 > * {
+				top:-70%;
+			}
+		</style>
+		
+		
+		<div class="container-fluid" id="sectiontwo">
+			<div id="behindblackclip"></div>
+           <div id="parallax1" class="parallaxParent">
+			
+			<div id="desktop2" style="background-image: url(img/background_big1.jpg);
+    		background-repeat: no-repeat; background-size: cover; clip-path: polygon(32% 0px, 100% 1%, 100% 100%, 51% 100%);"> </div>
+			   
+			
+		  </div>
+			
+			
+          	<div data-aos="fade-right" data-aos-duration="2000" id="text1">
+                <h1>Two world records,</h1>
+                <br>
+                <h1>Four world championships,</h1>
+                <br>
+                <h1>One Olympic Gold.</h1>
+            </div>
+            
+            <div data-aos="zoom-out-down" data-aos-duration="2000" id="text2">
+                <h1>DOB:3/17/1997</h1>
+                <br>
+                <h1>Height:6-0</h1>
+                
+               
+            </div>
+        </div>
+            
+        <div class="container-fluid" id="sectionthree">
+			<!--<div class="rellax" data-rellax-speed="2" id="poolfloat">
+			
+    	    	<img src="img/poolfloat.png" width="3240" height="2160" alt="poolfloat"/> 
+			</div>-->
+			
+			
+			<div class="triggerbox" id="triggerbox1"></div>
+			<div id="svgthing2"><svg id="svg2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 648.51 244"><defs><style>.cls-1{opacity:0.6;}.cls-2{fill:none;stroke:#4c7fa8;stroke-linecap:round; stroke-dasharray:1000px; stroke-dashoffset:1000px; stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>waveanimation</title><g class="cls-1"><path class="cls-2 1" d="M502.06,422.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,459.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,496.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,533.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,570.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,607.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 1" d="M502.06,644.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g></svg></div>
+		
+            <div class="rellax quote" data-rellax-speed="2" id="quote3desktop">
+                <backquote><p class="quotation">I would encourage you to set really high goals. Set goals that, when you set them, you think they're impossible. But then every day you can work towards them, and anything is possible, so keep working hard and follow your dreams.</p></backquote>
+            </div>
+            
+          
+			
+			
+            
+            
+        
+            
+            
+            
+            
+            
+        
+        
+        
+        </div>
+		
+		
+		<div class="container-fluid" id="sectionfour">
+			<div id="parallax2" class="parallaxParent">
+				<div style="background-image:url(img/sectionfourpicture2.jpg); background-size:cover; background-color:#4C7FA8; background-blend-mode: hard-light;"> </div>
+		    </div>
+			
+			
+			
+			<div >
+			 <h2 class="sectionfourtextbox" id="sectionfourtextbox1"> Ledecky first became interested in swimming when she was six years old. She demonstrated prodigious skills during her high school and joined the Nation's Capital Swim Club as a trainee. </h2>
+			 <h2 class="sectionfourtextbox" id="sectionfourtextbox3">
+			 In 2012 at the 2012 London Olympics, Ledecky for the first time won the gold medal for 800-meter freestyle, much to the surprise of many. </h2>
+				
+		   
+			
+			</div>
+		
+		
+		
+		
+		
+		
+		</div>
+		
+		
+	
+        
+		
+		
+		
+		
+        <div class="container-fluid" id="sectionfive">
+			<div class="rellax" data-rellax-speed="-2" id="sectionfivetextbox">
+				<h1>Record breaking, swimmer of the year. </h1>
+			
+			</div>
+			
+			<div id="sectionfivetextbox2">
+			<h2>Being trained by Yuri Suguiyama, Ledekcy's training consist of the combination of low intensity, aerobic, and high intensity, which makes her one of the strongest female swimmers. </h2></div>
+			
+			<div id="sectionfivepicturething">
+				
+				<div id="polygontext" >
+					<h1>“Do what you feel is best for yourself.”</h1>
+				</div>
+			</div>
+		</div>        
+        
+        
+		
+		
+		
+		
+		
+		<div class="container-fluid" id="sectionsixbig" >
+			<div id="sectionsixpicture" style="height:900px;">
+			</div>
+
+			
+
+			
+			
+			<div class="triggerbox" id="triggerbox2"></div>
+			<div id="svgthing"><svg id="svg1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 648.51 244"><defs><style>.cls-1{opacity:0.6;}.cls-2{fill:none;stroke:#4c7fa8;stroke-linecap:round; stroke-dasharray:1000px; stroke-dashoffset:1000px; stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>waveanimation</title><g class="cls-1"><path class="cls-2 2" d="M502.06,422.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,459.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,496.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,533.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,570.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,607.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g><g class="cls-1"><path class="cls-2 2" d="M502.06,644.5c24.7,0,24.7,16,49.41,16s24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.71-16,49.43-16,24.71,16,49.42,16,24.71-16,49.42-16,24.71,16,49.42,16,24.72-16,49.43-16,24.71,16,49.42,16,24.72-16,49.43-16,24.72,16,49.43,16" transform="translate(-499.06 -419.5)"/></g></svg></div>
+		
+		
+			<div class="rellax" data-rellax-speed="2" id="sectionsixtext">
+				
+				<p>As a Female World Swimmer of the Year, she broke world record five times. She was also named Associated Press Female Athlete, United States Olympic Committee Female Athlete of the Year, and Sportswoman of the Year by the Women's Sports Foundation.</p>	
+				
+				
+				
+			</div>
+		
+		
+
+		
+		
+		
+		</div>
+        
+        <div class="container-fluid" id="sectionseven">
+			
+			
+			
+			
+			
+			<div id="sectionsevenbanner">
+			
+				<h3  id="bannertext1" class="rellax bannertext" data-rellax-speed="2" >Named for TYR, the Norse god of warriors, our company is committed to cultivating a culture of greatness, both in and out of the water. Through vision and American ingenuity, we have become a brand synonymous with the athlete.
+				</h3>
+				<h3 class="rellax bannertext" id="bannertext2" data-rellax-speed="2">
+				Everything we do revolves around synthesizing creativity, experience and competition. 
+				
+
+				</h3>
+				
+				
+				
+			
+				
+			
+			
+			</div>
+			
+			<div id="areyouready">
+				<h1>Are you ready?</h1>
+				<h2>Join team TYR today.</h2>
+			</div>
+			<div class="col-sm-12" id="merchpics1">
+			
+				<div class="col-sm-6">
+					<a href="#"><img class="img-thumbnail" src="img/merch1.png" width="300" height="350" alt="merch1"/></a>
+					<h4>Venzo</h4> 
+					<span>The latest tech suit,Venzo swimsuit</span>
+					<br>
+					<span>$499.99</span>
+				</div>
+				
+				<div class="col-sm-6">
+					<a href="#"><img class="img-thumbnail" src="img/merch2.jpg" width="300" height="350" alt="merch2"/></a>
+					<h4>Blackhawk</h4>
+					<span>TYR Tracer-X Racing Nano Goggles</span>
+					<br>
+					<span>$24.99</span>
+				</div>
+			</div>
+			<div class="col-sm-12" id="merchpics2">
+				<div class="col-sm-6">
+					<a href="#"><img class="img-thumbnail" src="img/merch3.jpg" width="300" height="350" alt="merch3"/></a>
+					<h4>Tracer</h4>
+					<span>Tracer-X Racing Silicone Adult Swim Cap</span>
+					<br>
+					<span>$29</span>
+				</div>
+				
+				<div class="col-sm-6">
+					<a href="#"><img class="img-thumbnail" src="img/merch4.jpg" width="300" height="350" alt="merch4"/></a>
+					<h4>Thresher</h4>
+					<span>TYR Women’s Thresher Aerofit Swimsuit</span>
+					<br>
+					<span>$134.99</span>
+				</div>
+			</div>
+
+			
+			
+			
+			
+				
+			
+			<div id="finaltextbox">
+		    	<img src="img/slogan.png" width="257" height="20" alt="slogan"/>
+			</div>
+	</div>
+
+		
+		
+		
+	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        
+        <script type="text/javascript" src="js/rellax.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+        </script>
+		
+		<script>
+		var controller= new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+		
+		new ScrollMagic.Scene({triggerElement: "#parallax1"})
+			.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+			.addTo(controller);
+		new ScrollMagic.Scene({triggerElement: "#parallax2"})
+			.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+			.addTo(controller);
+		
+		</script>
+		
+		
+		
+		
+		<script>
+		//SVG ANIMATE ON SCROLL HEHEHHEH	
+			
+			var controller = new ScrollMagic.Controller();
+			
+			var tween = new TimelineMax()
+				.add(TweenMax.to(".1",1,{strokeDashoffset:0,ease:Linear.easeNone}));
+			
+			var scene= new ScrollMagic.Scene({triggerElement:"#triggerbox1",duration:900,tweenChanges:true})
+				.setTween(tween)
+				.addTo(controller);
+				
+		
+		
+		
+		</script>
+		
+		<script>
+		//SVG ANIMATE ON SCROLL HEHEHHEH	
+			
+			var controller = new ScrollMagic.Controller();
+			
+			var tween = new TimelineMax()
+				.add(TweenMax.to(".2",1,{strokeDashoffset:0,ease:Linear.easeNone}));
+			
+			var scene= new ScrollMagic.Scene({triggerElement:"#triggerbox2",duration:900,tweenChanges:true})
+				.setTween(tween)
+				.addTo(controller);
+				
+		
+		
+		
+		</script>
+		
+		
+
+    
+    </body>
+    
+
+</html>
+    
