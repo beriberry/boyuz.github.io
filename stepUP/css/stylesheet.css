@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Small devices (landscape phones, 576px and up)
+*/
+
+
+
+h1{
+	font-family: utopia-std-headline;
+	font-weight:400;
+	font-style:normal;
+	
+}
+
+small,p,a,h3,h6{
+	font-family: rubik;
+	font-style:normal;
+}
+.featurepic video{
+		webkit-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	-moz-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+		
+	}
+.row{
+	height:300px;
+	width:100%;
+}
+
+#promotionalstuff img{
+	margin:1%;
+}
+.featurepic{
+	display:flex;
+	justify-content: center;
+	height:65%;
+	
+}
+
+.featurepic video{
+	height:100%;
+}
+
+.feature{
+	height:550px;
+}
+body{
+	margin:auto;
+
+	
+}
+
+
+
+.responsive{
+	max-width:100%;
+	max-height:100%;
+}
+
+#bottomillustration img{
+	margin-top:100px;
+}
+
+#promotional{
+	background-image: url(../img/Promotion.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+#fancyfeaturestuff{
+	background-image:url(../img/Features.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:2980px;
+}
+
+#bubblesanimation{
+	background:rgba(243,200,187,1.00);
+		
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+
+#testimonialcontainer{
+	background-image:url(../img/Bubbles.png);
+
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#footer{
+	background-image:url(../img/Footer.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+#logo img{
+	height:100px;
+	width:100px;
+}
+
+#slogan{
+	height:50px;
+}
+
+#slogan2{
+	height:165px;
+}
+
+#promotion{
+	margin-top:150px;
+}
+
+
+.social img{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+.featuretext{
+	text-align: center;
+	
+}
+/*name for the containers, delete later
+*/
+.textBox{
+	position:absolute;
+	top:45%;
+	left:45%;
+	background-color:fuchsia;
+	width:20%;
+	text-align:center;
+}
+
+
+
+
+
+ul{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	
+}
+
+li{
+	margin:10px;
+}
+
+
+#testimonials img{
+		border-radius:100px;
+		
+	}
+
+#header{
+		display:flex;
+		background-image:url(../img/hero.jpg);
+		background-size:cover;
+		background-repeat:no-repeat;
+		flex-direction:column;
+		align-items: left;
+		
+	
+	}
+
+#header h1{
+	color:#3964a0;
+	font-size:35px;
+}
+
+#header{
+	margin:0;
+	
+}
+
+
+.container{
+	padding:0;
+}
+
+#slogan h6{
+	text-align: left;
+}
+
+
+#promotion{
+	text-align: center;
+}
+
+#phone {
+	display:flex;
+	justify-content: center;
+}
+
+#fancyfeaturestuff{
+	display:flex;
+	flex-wrap: wrap;
+	
+	
+}
+.featuretext{
+	display:flex;
+	order:1;
+	justify-content: center;
+	align-items: center;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count:1;
+	
+}
+
+.featuretext h3{
+	padding-bottom:65px;
+	padding-top:25px;
+}
+
+#featuretext4 h3{
+	padding-bottom:37px;
+}
+
+#feature1{
+	margin-top:450px;
+}
+
+#bottomillustration{
+	display: flex;
+	justify-content: center;
+}
+
+#bubblesanimation{
+	display:none;
+}
+
+#appstore, #socialmedia{
+	display:flex;
+	justify-content:center;
+}
+
+#downloadtext{
+	margin-top:50px;
+}
+
+.social{
+		display:flex;
+		justify-content: center;
+	}
+
+#socialmediacontainer{
+	height:150px;
+	margin-top:100px;
+}
+#socialmediarow{
+	height:200px;
+}
+
+#bottomnav{
+	margin-top:100px;
+}
+
+#testimonials h6{
+	text-align: center;
+}
+
+
+
+
+h3{
+	font-size:20px;
+}
+#logorow{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+#promotionalstuff{
+		height:200px;
+	}
+
+ul{
+	list-style: none;
+}
+
+#testimonialrow{
+	display:flex;
+	justify-content: center;
+}
+
+.testimonial{
+	margin-top:0;
+    background: none;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+}
+.testimonial .pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+.testimonial .testimonial-title{
+    font-size: 16px;
+    color: #37474f;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #3964a0;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.testimonial .description{
+    font-size: 15px;
+    font-style: italic;
+    color: #37474f;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+.owl-theme .owl-controls{
+    width: 100%;
+    position: absolute;
+    top: 45px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    font-size: 18px;
+    background: none;
+    opacity: 0.5;
+}
+.owl-theme .owl-prev{
+    position: relative;
+    left: -45px;
+}
+.owl-theme .owl-next{
+    position: relative;
+    right: -45px;
+}
+.owl-prev:before,
+.owl-next:before{
+    content: "\f177";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    color: #003a71;
+}
+.owl-next:before{
+    content: "\f178";
+}
+
+
+
+
+@media (min-width: 576px) {
+	
+	h3{
+		font-size:20px;
+	}
+	
+	.featuretext h3{
+	padding-bottom:0px;
+}
+
+	.featurepic{
+	display:flex;
+	justify-content: center;
+	margin-top:100px;
+	
+}
+	
+	.featuretext{
+	
+		order:0;
+	}
+	
+	.featurepic video{
+		width:251px;
+		height:447px;
+		webkit-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	-moz-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+		
+	}
+	
+	li{
+		margin:30px;
+	}
+	
+	#bubblesanimation{
+		display:none;
+	}
+	
+	body{
+		background-size:cover;
+	}
+	
+	.container{
+		max-width:100%;
+	}
+	
+	#header{
+		width:100%;
+	}
+	
+	#logo img{
+		height:230px;
+		width:230px;
+	}
+	
+	
+	#featuretext1{
+	text-align: center;
+	}
+	
+	#fancyfeaturestuff{
+		height:2900px;
+	}
+	
+	#header{
+		height:700px;
+		margin:0;
+		
+	}
+	
+	
+	
+	#logo{
+		display:flex;
+		justify-content: flex-start;
+		align-items:flex-start;
+		
+	}
+	
+	#logorow{
+		margin-top:50px;
+		margin-left:50px;
+	}
+	
+	
+	#sloganrow{
+		margin-top:0;
+	}
+	
+	#slogan{
+	height:100px;
+}
+
+	#slogan2{
+	height:100px;
+}
+	
+	#logo h1{
+		font-size:40px;
+	}
+	
+	h1{
+		font-size:2rem;
+		text-align: center;
+	}
+	
+	#feature1{
+		margin-top:200px;
+	}
+	
+	#phone{
+		display:flex;
+		justify-content: center;
+	}
+	
+	.feature{
+		height:600px;
+	}
+	
+	#testimonials{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	
+	#downloadtext{
+		margin-top:90px;
+	}
+	
+	#socialmediacontainer{
+		height:150px;
+	}
+	
+	#slogan h1{
+		font-size:50px;
+		
+	}
+	
+	#slogan h1{
+		text-align: left;
+	}
+	
+	#promotion{
+		margin-top:100px;
+	}
+	
+	#promotionalstuff{
+		margin-top:0;
+	}
+	
+	
+	#bottomillustration img{
+		margin-top: 100px;
+	}
+	
+}
+
+
+
+/*Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) {
+	
+}
+
+/*Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { 
+	
+	#promotion{
+		padding-left:450px;
+		padding-right:450px;
+
+	}
+	
+	.featuretext h3{
+		font-size:25px;
+	}
+	
+	#bottomillustration img{
+		height:50%;
+		width:auto;
+		margin-top:0;
+	}
+	
+	
+	.testimonial .description{
+    font-size: 20px;
+	}
+	
+	
+	
+	.testimonial .pic{
+    width: 80px;
+    height: 80px;
+	}
+	
+	.testimonial .post{
+    display: block;
+    font-size: 15px;
+	}
+	
+	.featurepic{
+	margin-top:0;
+	
+}
+	.featurepic video{
+		width:330px;
+		height:586px;
+		webkit-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	-moz-box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+    	box-shadow: 10px 6px 15px -2px rgba(171,155,150,0.94);
+		
+	}
+
+	li{
+		margin:50px;
+	}
+	#bubbles{
+		display:flex;
+		justify-content: center;
+		margin-top:150px;
+	}
+	#bubblesanimation{
+		display:flex;
+		justify-content: center;
+		height:450px;
+	}
+	
+	#bubblesrow{
+		margin-top: 100px;
+	}
+	
+	
+	.container{
+		max-width:100%;
+	}
+	
+
+	
+	#bubbles{
+		margin-top:0;
+	}
+	#testimonials{
+		margin-top:190px;
+	}
+	
+	#slogan{
+		display:flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding-right:400px;
+	}
+	#slogan2{
+		display: flex;
+		justify-content: flex-end;
+		align-items:flex-start;
+		padding-right:250px;
+		
+	}
+	
+	#slogan2 h6{
+		margin-top:5px;
+	}
+	#slogan2 img{
+		margin-left:10px;
+	}
+	
+	.testimonial{
+		margin-top:0;
+	}
+	
+	
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) { 
+}
+
+
+@media only screen and (max-width: 480px){
+    .testimonial{
+        padding: 40px 10%;
+    }
+}
