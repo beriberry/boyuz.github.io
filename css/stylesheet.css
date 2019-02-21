@@ -2,6 +2,7 @@
     padding-left:0;
 }
 
+
 .section{
   height:900px;
 }
@@ -119,5 +120,48 @@ h2{
   }
 
   #aboutme h2{
-    font-size:50px;
+    font-size:40px;
+    padding-left:3%;
+  }
+
+  #firstline{
+    padding-top:35%;
+  }
+
+  #thirdline{
+    padding-top:2%;
+  }
+
+  a{
+    color:white;
+  }
+  a:hover{
+    color:white;
+  }
+
+  #thirdline a:hover{
+    text-decoration: line-through;
+  }
+
+
+
+  #contact{
+    background:black;
+    height:920px;
+  }
+
+  #contact h1{
+    font-size:80px;
+    padding-top:35%;
+    padding-left:3%;
+  }
+
+  #contact h2{
+    font-size:30px;
+    padding-left:3%;
+  }
+
+  #contact h2 a:hover{
+    text-decoration: line-through;
+
   }
