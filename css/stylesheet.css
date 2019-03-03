@@ -1,3 +1,6 @@
+
+/*overallcode*/
+
 .container{
     padding-left:0;
 }
@@ -36,12 +39,25 @@ h2{
 }
 
 #container2{
-  background:red;
+  background:black;
 
 }
 
+.banneranchor:hover{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
 #container3{
-  background:yellow;
+  background:black;
 }
 
 #container4{
@@ -57,6 +73,7 @@ h2{
 }
 
 
+/*navbar*/
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -69,99 +86,141 @@ h2{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 240px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
+}
   
-  /* The navigation menu links */
-  .sidenav a {
+/* The navigation menu links */
+.sidenav a {
     text-decoration: none;
     font-size: 100px;
     color:white;
     display: block;
     transition: 0.3s;
     padding-left:15%;
-  }
+}
   
-  /* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color */
  
   
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
     position: absolute;
     top: 0px;
     right: 25px;
     margin-left: 50px;
-  }
+}
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
     transition: margin-left .5s;
     padding: 20px;
-  }
+}
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+}
 
 
 
-  #fp-nav ul li a span{
+#fp-nav ul li a span{
     background-color:white;
-  }
+}
 
-  #fp-nav.fp-right {
+#fp-nav.fp-right {
     right: 50px;
-  }
+}
 
-  #aboutme{
+
+
+
+/*aboutme.html*/
+
+#aboutme{
     height:920px;
     background:black;
-  }
+}
 
-  #aboutme h2{
+#aboutme h2{
     font-size:40px;
     padding-left:3%;
-  }
+}
 
-  #firstline{
+#firstline{
     padding-top:35%;
-  }
+}
 
-  #thirdline{
+#thirdline{
     padding-top:2%;
-  }
+}
 
-  a{
+a{
     color:white;
-  }
-  a:hover{
+}
+a:hover{
     color:white;
-  }
+}
 
-  #thirdline a:hover{
+#thirdline a:hover{
     text-decoration: line-through;
-  }
+}
 
 
-
-  #contact{
+/*contact.html*/
+#contact{
     background:black;
     height:920px;
-  }
+}
 
-  #contact h1{
+#contact h1{
     font-size:80px;
     padding-top:35%;
     padding-left:3%;
-  }
+}
 
-  #contact h2{
+#contact h2{
     font-size:30px;
     padding-left:3%;
-  }
+}
 
-  #contact h2 a:hover{
+#contact h2 a:hover{
     text-decoration: line-through;
 
-  }
+}
+
+/*webuxdesign.html*/
+
+#webuxdesign{
+  height:2000px;
+  background:black;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 120px;
+  max-width:800px;
+  padding-top:400px;
+}
+
+.thumbnail{
+  object-fit: cover;
+  text-align: center;
+}
+
+img{
+  border:solid white 10px;
+
+}
+
+
+
+.thumbnailtext{
+  color:white;
+  font-size:40px;
+}
+
+.thumbnail a:hover{
+  text-decoration: line-through;
+}
