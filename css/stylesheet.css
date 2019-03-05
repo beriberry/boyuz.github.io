@@ -5,6 +5,198 @@
     padding-left:0;
 }
 
+.glitch{
+    color:white;
+    position:relative;
+    width:400px;
+    margin-left:15%;
+    margin-top:5%;
+    font-size:100px;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
+
+.glitch:before, .glitch:after{
+    content:'Hello,';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+}
+
+
+
+
+.glitch:before{
+    left: 80px;
+    text-shadow: 2px 0 #00ffea;
+    animation: effect 5s infinite linear;
+}
+.glitch:after{
+    left:4px;
+    text-shadow: -2px 0 #000000;
+    animation: effect 4s infinite linear;
+  
+}
+@-webkit-keyframes effect{
+    0%{
+      clip: rect(55px, 9999px, 56px, 0);
+    }
+    5%{
+      clip: rect(47px, 9999px, 30px, 0);
+    }
+    10%{
+      clip: rect(33px, 9999px, 36px, 0);
+    }
+    15%{
+      clip: rect(35px, 9999px, 9px, 0);
+    }
+    20%{
+      clip: rect(63px, 9999px, 59px, 0);
+    }
+    25%{
+      clip: rect(96px, 9999px, 98px, 0);
+    }
+    30%{
+      clip: rect(48px, 9999px, 77px, 0);
+    }
+    35%{
+      clip: rect(50px, 9999px, 34px, 0);
+    }
+    40%{
+      clip: rect(60px, 9999px, 72px, 0);
+    }
+    45%{
+      clip: rect(10px, 9999px, 81px, 0);
+    }
+    50%{
+      clip: rect(2px, 9999px, 60px, 0);
+    }
+    55%{
+      clip: rect(23px, 9999px, 59px, 0);
+    }
+    60%{
+      clip: rect(76px, 9999px, 91px, 0);
+    }
+    65%{
+      clip: rect(62px, 9999px, 30px, 0);
+    }
+    70%{
+      clip: rect(60px, 9999px, 73px, 0);
+    }
+    75%{
+      clip: rect(60px, 9999px, 87px, 0);
+    }
+    80%{
+      clip: rect(2px, 9999px, 14px, 0);
+    }
+    85%{
+      clip: rect(28px, 9999px, 87px, 0);
+    }
+    90%{
+      clip: rect(73px, 9999px, 50px, 0);
+    }
+    95%{
+      clip: rect(79px, 9999px, 70px, 0);
+    }
+    100%{
+      clip: rect(17px, 9999px, 79px, 0);
+    }
+}
+
+
+
+
+
+.glitch2{
+    color:white;
+    position:relative;
+    width:800px;
+    margin-left:15%;
+    margin-top:5%;
+    font-size:100px;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
+
+.glitch2:before, .glitch2:after{
+    content:'Web/UX Design';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+}
+
+
+
+
+.glitch2:before{
+    left: 80px;
+    text-shadow: 2px 0 #00ffea;
+    animation: effect 5s infinite linear;
+}
+.glitch2:after{
+    left:4px;
+    text-shadow: -2px 0 #000000;
+      animation: effect 4s infinite linear;
+  
+}
+
+
+
+.glitch3{
+    color:white;
+    position:relative;
+    width:800px;
+    margin-left:15%;
+    margin-top:5%;
+    font-size:100px;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
+
+.glitch3:before, .glitch3:after{
+    content:'Packaging Design';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+}
+
+
+
+
+.glitch3:before{
+    left: 80px;
+    text-shadow: 2px 0 #00ffea;
+    animation: effect 5s infinite linear;
+}
+.glitch3:after{
+    left:4px;
+    text-shadow: -2px 0 #000000;
+      animation: effect 4s infinite linear;
+  
+}
+
+
+
+
+#firstpageimage img{
+    height:60%;
+    position: absolute;
+    bottom:15%;
+    left:25%;
+}
+
 
 .section{
   height:900px;
@@ -209,7 +401,7 @@ a:hover{
   text-align: center;
 }
 
-img{
+.thumbnail img{
   border:solid white 10px;
 
 }

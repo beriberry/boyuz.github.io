@@ -35,27 +35,33 @@
     </div>
     <div id="fullpage">
       <div class="section container-fluid active" id="container1">
-        <div class="container" id="mememe">
+        <div class="glitch" id="mememe">
           <h1>Hello,</h1>
-          <br>
           <h1>I'm Boyu.</h1>
-          <br>
           <h2>Visual deisgner | Front end developer | UX designer</h2>
+        
+          
+        </div>  
+        
+        <div class="container" id="firstpageimage">
 
-        </div>
+          <img class="js-tilt" data-tilt src="img/firstpageimage.png">
+        </div>  
+
+        
 
         
       </div>
 
       <div class="section" id="container2">
-          <div class="container" id="webdesignbanner">
+          <div class="container glitch2" id="webdesignbanner">
             <a class="banneranchor" href="webuxdesign.html"><h1>Web/UX Design</h1></a>
 
 
           </div>
       </div>
       <div class="section" id="container3">
-          <div class="container" id="packagedesignbanner">
+          <div class="container glitch3" id="packagedesignbanner">
             <a class="banneranchor" href="#"><h1>Packaging Design</h1></a>
 
           </div>
@@ -112,7 +118,7 @@
 
 
         </ul>
-  </div>
+   </div>
       
     <a href="boltbus/index.html">Boltbus</a>
     <a href="stepUP/index.html">stepUP</a>
@@ -144,8 +150,25 @@
       responsiveHeight: 330,
       controlArrows: false
       });
-    
+
+     
     </script>
+
+    <script>
+    $(document).ready(function(){
+      $('.js-tilt').tilt({
+        reset: false
+      })
+
+      $('.js-tilt').tilt({
+        maxTilt:3
+      })
+    })
+    </script>
+
+    <script src="js/tilt.jquery.js"></script>
+
+
 
   </body>
 </html>
