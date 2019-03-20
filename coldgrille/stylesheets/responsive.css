@@ -235,6 +235,8 @@
 	.herotext2{
 		top:70%;
 	}
+	.merchpic{
+		width:80%;}
 }
 
 /* Mobile Landscape Size */
@@ -304,9 +306,7 @@
 		visibility: visible;
 	}
 
-	.merchpic{
-		width:80%;
-	}
+	
 	.herotext2{
 		top:70%;
 	}
