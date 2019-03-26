@@ -111,90 +111,15 @@
 
 
 
-.glitch2{
-    color:white;
-    position:relative;
-    width:800px;
-    margin-left:15%;
-    margin-top:5%;
-    font-size:100px;
-    z-index: 2;
-    mix-blend-mode: lighten;
-}
-
-.glitch2:before, .glitch2:after{
-    content:'Web/UX Design';
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    background-color: rgba(0,0,0,1);
-    color: #fff;
-}
-
-
-
-
-.glitch2:before{
-    left: 80px;
-    text-shadow: 2px 0 #00ffea;
-    animation: effect 5s infinite linear;
-}
-.glitch2:after{
-    left:4px;
-    text-shadow: -2px 0 #000000;
-      animation: effect 4s infinite linear;
-  
-}
-
-
-
-.glitch3{
-    color:white;
-    position:relative;
-    width:800px;
-    margin-left:15%;
-    margin-top:5%;
-    font-size:100px;
-    z-index: 2;
-    mix-blend-mode: lighten;
-}
-
-.glitch3:before, .glitch3:after{
-    content:'Packaging Design';
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    background-color: rgba(0,0,0,1);
-    color: #fff;
-}
-
-
-
-
-.glitch3:before{
-    left: 80px;
-    text-shadow: 2px 0 #00ffea;
-    animation: effect 5s infinite linear;
-}
-.glitch3:after{
-    left:4px;
-    text-shadow: -2px 0 #000000;
-      animation: effect 4s infinite linear;
-  
-}
 
 
 
 
 #firstpageimage img{
-    height:60%;
+    height:70%;
     position: absolute;
-    bottom:15%;
-    left:25%;
+    bottom:10%;
+    left:40%;
 }
 
 
@@ -207,20 +132,22 @@
 
     max-width: 100%;
     height:950px;
-    background-color:black;
+    background-color:rgb(20, 20, 20);
 }
 
 
 
 h1{
-    font-size:100px;
+    font-size:80px;
     color:white;
 }
 
-h2{
+ #mememe h2{
   font-size:16px;
-  color:white;
+  color:rgb(248, 241, 140);
 }
+
+
 
 
 #menu{
@@ -230,8 +157,9 @@ h2{
     padding-top:3%;
 }
 
+
 #container2{
-  background:black;
+  background:rgb(20, 20, 20);
 
 }
 
@@ -249,7 +177,7 @@ h2{
 
 
 #container3{
-  background:black;
+  background:rgb(20, 20, 20);
 }
 
 #container4{
@@ -274,7 +202,7 @@ h2{
     z-index: 200; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color:black; /* Black*/
+    background-color:rgb(20, 20, 20); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 240px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -283,7 +211,7 @@ h2{
 /* The navigation menu links */
 .sidenav a {
     text-decoration: none;
-    font-size: 100px;
+    font-size: 50px;
     color:white;
     display: block;
     transition: 0.3s;
@@ -296,8 +224,8 @@ h2{
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 0px;
-    right: 25px;
+    top: 40px;
+    right: 35px;
     margin-left: 50px;
 }
   
@@ -330,21 +258,22 @@ h2{
 
 #aboutme{
     height:920px;
-    background:black;
+    background:rgb(20, 20, 20);
 }
 
 #aboutme h2{
-    font-size:40px;
-    padding-left:3%;
+    font-size:25px;
+    padding-left:10%;
+    color:white;
+    z-index:3;
+    position: absolute;
 }
 
 #firstline{
-    padding-top:35%;
+    top:70vh;
 }
 
-#thirdline{
-    padding-top:2%;
-}
+
 
 a{
     color:white;
@@ -353,26 +282,39 @@ a:hover{
     color:white;
 }
 
-#thirdline a:hover{
+.click a:hover{
     text-decoration: line-through;
+}
+
+#aboutme img{
+  width:85%;
+  position: absolute;
+  left:10%;
+  top:9%;
+  z-index:0;
+}
+
+#aboutme a{
+  background-color:rgb(247, 247, 104);
+  color:rgb(20, 20, 20);
 }
 
 
 /*contact.html*/
 #contact{
-    background:black;
+    background:rgb(20, 20, 20);
     height:920px;
 }
 
 #contact h1{
     font-size:80px;
     padding-top:35%;
-    padding-left:3%;
+    padding-left:8%;
 }
 
 #contact h2{
     font-size:30px;
-    padding-left:3%;
+    padding-left:8%;
 }
 
 #contact h2 a:hover{
@@ -380,11 +322,22 @@ a:hover{
 
 }
 
+#contact h2{
+  font-size:25px;
+  color:white;
+  z-index:3;
+}
+
+#contact a{
+  background-color:rgb(247, 247, 104);
+  color:rgb(20, 20, 20);
+}
+
 /*webuxdesign.html*/
 
 #webuxdesign{
   height:2000px;
-  background:black;
+  background:rgb(20, 20, 20);
 }
 
 #grid{
@@ -393,26 +346,131 @@ a:hover{
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 120px;
   max-width:800px;
-  padding-top:400px;
+  padding-top:300px;
 }
 
 .thumbnail{
-  object-fit: cover;
   text-align: center;
+  position: relative;
+  width: 100%;
+  padding-right:0;
 }
 
 .thumbnail img{
-  border:solid white 10px;
+  display: block;
+  width: 100%;
+  height: auto;
 
 }
 
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border:2px rgb(20, 20, 20) solid;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
 
-.thumbnailtext{
-  color:white;
+#overlaycolor1{
+  background-color: rgb(233, 143, 91);
+
+}
+
+#overlaycolor2{
+  background-color: #ffb307;
+}
+
+
+
+
+.thumbnail:hover .overlay {
+  height: 100%;
+}
+
+.overlaytext {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlaytext h1,h2,h6 {
+  color: rgb(20, 20, 20);
+}
+
+.overlaytext h1{
   font-size:40px;
 }
 
-.thumbnail a:hover{
-  text-decoration: line-through;
+.overlaytext h2{
+  font-size:20px;
 }
+
+.overlaytext a:hover{
+  text-decoration:line-through;
+
+}
+
+
+
+.webdesignintro h2{
+  font-size:30px;
+  margin-left:20px;
+  margin-top:20px;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  #firstpageimage img{ 
+    display:none;
+  }
+  #aboutme img{
+    display:none;
+  }
+
+  #firstline{
+    top:50vh;
+  }
+
+  #aboutme h2{
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+
+
+}
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
