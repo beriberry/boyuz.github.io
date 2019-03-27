@@ -430,10 +430,145 @@ a:hover{
 }
 
 
+/*stepup.html*/
+
+#stepup{
+  background-color:rgb(20, 20, 20);
+  height:6000px;
+}
 
 
 
+#stepup h1{
+  font-size:50px;
+}
+#stepup h2{
+  color:white;
+  font-size:30px;
+}
 
+#stepup p{
+  color:white;
+}
+
+#stepup_intro{
+  padding-top:10%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+#stepup_problemsolution{
+  padding-left:6%;
+  padding-right:5%;
+}
+
+#stepup_header{
+  background-color:#fd9167;
+  height:150px;
+  text-align: center;
+  padding-left:0;
+
+}
+
+#stepup_header h1{
+  color:rgb(20,20,20);
+  padding-top:3%;
+}
+
+.container-fluid{
+  padding-left:0;
+  padding-right:0;
+}
+
+hr{
+  border:.5px solid white;
+  margin:5%;
+}
+
+#stepup_prototype{
+  padding-left:5%;
+  padding-right:5%;
+
+}
+
+#wireframes{
+  height:500px;
+  padding-top:1%;
+}
+
+
+#wireframes img{
+  width:90%;
+  height:90%;
+  
+}
+
+#highfidelitytext{
+  padding-top:15%;
+  padding-bottom:3%;
+}
+
+
+.chocolat-wrapper .chocolat-right {
+ 
+  width: 139px;
+  height: 131px;
+}
+
+.chocolat-wrapper .chocolat-left {
+ 
+  width: 139px;
+  height: 131px;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+  background-color:#fd9167a4;
+}
+
+.chocolat-image img{
+  width:200px;
+}
+
+#stepup_userstory{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+#stepup_userstory h2{
+  padding-bottom:1%;
+}
+
+#style{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+#style h2{
+  padding-bottom:1%;
+}
+
+.chocolat-wrapper {
+  color:rgb(20,20,20);
+}
+
+#feature{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+
+
+#landingpage{
+  padding-right:0;
+}
+#landingpage p{
+  color:rgb(20,20,20);
+
+}
+
+#landingpage a:hover{
+  text-decoration: line-through;
+}
 
 
 
@@ -441,6 +576,7 @@ a:hover{
 @media (max-width: 576px) {
   #firstpageimage img{ 
     display:none;
+
   }
   #aboutme img{
     display:none;
@@ -455,8 +591,40 @@ a:hover{
     padding-right:3%;
   }
 
+  #stepup_problemsolution{
+    padding-left:10%;
+  }
+
+  #wireframes img{
+    width:100%;
+  }
 
 
+  .chocolat-wrapper .chocolat-right {
+    visibility: hidden;
+  }
+
+  .chocolat-wrapper .chocolat-left {
+    visibility: hidden;  
+  }
+
+  .chocolat-content .chocolat-img {
+    width: 200%;
+    height: 200%;
+  }
+  
+  .chocolat-content{
+    left:70px;
+  }
+
+  .chocolat-image img{
+    width:100px;
+  }
+  
+  #stepup{
+    height:7400px;
+  }
+  
 }
 
 
