@@ -257,7 +257,7 @@ h1{
 /*aboutme.html*/
 
 #aboutme{
-    height:920px;
+    height:1000px;
     background:rgb(20, 20, 20);
 }
 
@@ -303,7 +303,7 @@ a:hover{
 /*contact.html*/
 #contact{
     background:rgb(20, 20, 20);
-    height:920px;
+    height:1000px;
 }
 
 #contact h1{
@@ -340,7 +340,7 @@ a:hover{
   background:rgb(20, 20, 20);
 }
 
-#grid{
+.grid{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
@@ -403,9 +403,11 @@ a:hover{
   text-align: center;
 }
 
-.overlaytext h1,h2,h6 {
+.overlaytext h1,h2, h6{
   color: rgb(20, 20, 20);
 }
+
+
 
 .overlaytext h1{
   font-size:40px;
@@ -463,17 +465,22 @@ a:hover{
 }
 
 #stepup_header{
-  background-color:#fd9167;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   height:150px;
   text-align: center;
   padding-left:0;
 
 }
 
-#stepup_header h1{
-  color:rgb(20,20,20);
-  padding-top:3%;
+#stepup_header_text{
+  border-left:20px solid #fd9167;
+  color:white;
+  padding-left:20px;
 }
+
+
 
 .container-fluid{
   padding-left:0;
@@ -523,10 +530,12 @@ hr{
 
 .chocolat-wrapper .chocolat-bottom {
   background-color:#fd9167a4;
+  
 }
 
 .chocolat-image img{
   width:200px;
+  margin:5px;
 }
 
 #stepup_userstory{
@@ -569,6 +578,271 @@ hr{
 #landingpage a:hover{
   text-decoration: line-through;
 }
+
+/*thrive.html*/
+
+#thrive{
+  background-color:rgb(20, 20, 20);
+  height:12000px;
+}
+
+
+
+#thrive h1{
+  font-size:50px;
+}
+#thrive h2{
+  color:white;
+  font-size:30px;
+}
+
+#thrive p{
+  color:white;
+}
+
+#thrive_header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  text-align: center;
+  padding-left:0;
+
+}
+
+#thrive_header_text{
+  border-left:20px solid rgb(255, 202, 88);
+  color:white;
+  padding-left:20px;
+}
+
+#thrive_intro{
+  padding-top:10%;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+#thrive_problemsolution{
+  padding-left:6%;
+  padding-right:5%;
+}
+
+#thrive_userstory{
+  padding-left:5%;
+  padding-right:5%;
+
+}
+
+#thrive_userstory h2{
+  padding-bottom:1%;
+}
+
+.diagrams{
+  padding-left:6%;
+  padding-right:5%;
+
+}
+
+#maslow{
+  width:80%;
+  padding-top:3%;
+}
+
+#customer{
+  width:100%;
+  padding-top:3%;
+}
+
+#thrive_branding{
+  padding-left: 6%;
+  padding-right:5%;
+}
+
+.circle{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin:10px;
+  border:2px, solid, rgb(20,20,20);
+}
+
+.swatches{
+  padding-top:5%;
+  display:flex;
+  flex-direction: column;
+}
+
+#thrive_style{
+display:flex;
+flex-direction: row;
+}
+
+
+#thrive_logo{
+  width:60%;
+  height:60%;
+  padding-top:5%;
+  padding-left:5%;
+
+}
+
+#thrive_prototype{
+  padding-left:6%;
+  padding-right:5%;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+  height:47px;
+}
+
+.chocolat-description{
+  font-size:17px;
+}
+
+
+
+
+#clicktosee{
+  color:white;
+}
+
+.grid h4{
+  color:white;
+  font-size:15px;
+  padding-left:6%;
+}
+
+.chocolat-parent h4{
+  color:white;
+  font-size:15px;
+  padding-bottom:2%;
+  
+}
+
+/*visualdesign.html*/
+
+#visualdesign{
+  height:2000px;
+  background-color:rgb(20,20,20);
+}
+
+#overlaycolor3{
+  background-color:rgb(243, 131, 131);
+}
+
+#overlaycolor4{
+  background-color:#44ced0;
+}
+
+
+#overlaycolor5{
+  background-color:rgb(224, 173, 32);
+}
+
+#overlaycolor6{
+  background-color:rgb(247, 102, 215);
+}
+
+/*bookjacket.html*/
+.visuals{
+  height:2500px;
+  background-color:rgb(20,20,20);
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 80px;
+  max-width:1000px;
+  padding-top:300px;
+  overflow:hidden;
+  padding-top:10%;
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  text-align: center;
+  padding-left:0;
+
+}
+
+.header_text{
+  font-size:50px;
+  color:white;
+  padding-left:20px;
+}
+
+#bookjacket_header_text{
+  border-left:20px solid rgb(243, 131, 131);
+
+}
+
+p{
+  color:white;
+}
+
+.visual_caption{
+  text-align: center;
+}
+
+
+/*zine.html*/
+
+
+#zine_header_text{
+  border-left:20px solid #44ced0;
+
+}
+
+
+
+
+
+
+
+/*admiral.html*/
+#admiral_header_text{
+  border-left:20px solid rgb(224, 173, 32);
+  
+}
+
+
+
+
+/*album.html*/
+
+#album_header_text{
+  border-left:20px solid rgb(247, 102, 215);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -619,12 +893,86 @@ hr{
 
   .chocolat-image img{
     width:100px;
+    
   }
   
   #stepup{
     height:7400px;
   }
-  
+
+  #maslow{
+    width:100%;
+  }
+
+  .circle{
+    width: 30px;
+    height: 30px;
+  }
+
+  #thrive_logo{
+    width:50%;
+    height:50%;
+    
+  }
+
+  #thrive_header{
+    padding-top:10%;
+  }
+  #thrive_subheader{
+    padding-top:10%;
+  }
+
+
+
+  .sidenav {
+    padding-top:150px;
+  }
+
+  .sidenav a {
+    font-size:40px;
+  }
+
+  #thrive{
+    height:12200px;
+  }
+
+
+  .visuals{
+    height:5000px;
+    
+  }
+
+ .header{
+    padding-top:10%;
+  }
+  .visual_caption{
+    padding-top:10%;
+    text-align: left;
+    padding-left:5%;
+    padding-right:5%;
+  }
+
+  .grid2{
+    padding-left:15%;
+  }
+
+  .glitch{
+    margin-left:3%;
+  }
+  .glitch:before{
+    display:none;
+  }
+  .glitch:after{
+    display:none;
+  }
+  #webdesignbanner{
+    margin-left:5%;
+  }
+
+  #packagedesignbanner{
+    margin-left:5%;
+  }
+
 }
 
 
