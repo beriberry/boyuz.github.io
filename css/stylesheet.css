@@ -219,6 +219,7 @@ h1{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 240px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    padding-left:0;
 }
   
 /* The navigation menu links */
