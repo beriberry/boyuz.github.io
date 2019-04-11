@@ -1,123 +1,152 @@
 <html>
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="This is a portfolio website of Boyu Zhang." >
-      <meta name="keywords" content="Boyu Zhang,Graphic Design,Web Design,branding,design,portfolio,illustration,HTML,CSS,XML,JavaScript">
-      <meta name="author" content="Boyu Zhang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a portfolio website of Boyu Zhang.">
+    <meta name="keywords"
+        content="Boyu Zhang,Graphic Design,Web Design,branding,design,portfolio,illustration,HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Boyu Zhang">
 
 
-      <title>Boyu Zhang</title>
-      <link rel="icon" href="img/icon.jpg">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <script src="js/jquery-3.3.1.js"> </script>
+    <title>Boyu Zhang</title>
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.js"> </script>
 
-      <script src="js/bootstrap.min.js"></script>
-      <link href="css/fullpage.css" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-      <link rel="stylesheet" href="src/css/swipebox.css">
-
-
-      <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-
-      <script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-      <script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-      <script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
-      <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
-
-                                                                                  
-  </head>
-  <body>
-        <div class="container" id="menu" onclick="openNav()">
-                <span class="burger"></span>
-                <span class="burger"></span>
-                <span class="burger"></span> 
-          
-        </div>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/fullpage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="src/css/swipebox.css">
 
 
-        <div class="container-fluid visuals">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
 
 
-                <div class="col-sm-12 container header" >
-                    <h1 class="header_text" id="admiral_header_text">Admiral Gourmet Coffee Co.</h1>
-                </div>
-        
-                <div class="visual_caption">
-                    <p>Admiral Gourmet Coffee: Richer, Smoother, Better.
-                    <br>The design includes: an 8 oz coffee cup, loyalty card, and folder.
-                    <br>I wanted to create the sense of smoothness and milkiness.
-                    <br>The two high contrast yet harmonious spot colors are lively and indicate good energy.
-                    <br><i>Click images to zoom in:)</i>
-                    </p>
-                </div>
+</head>
 
+<body>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
 
-
-            <div class="container grid2">
-                <a href="img/img_coffee/0.jpg" class="swipebox">
-                    <img src="img/img_coffee/0.jpg" style="width:280px;"></a>
-                
-                <a href="img/img_coffee/2.jpg" class="swipebox">
-                    <img src="img/img_coffee/2.jpg" style="width:280px;"></a>
-                <a href="img/img_coffee/3.jpg" class="swipebox">
-                    <img src="img/img_coffee/3.jpg" style="width:280px;"></a>
-                <a href="img/img_coffee/1.jpg" class="swipebox">
-                    <img src="img/img_coffee/1.jpg" style="width:280px;"></a>
-                
-                
-
-                
-
-
-
-                
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-
-
-        <ul id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="navoverlay" id="navoverlay">
+        <nav class="overlay-menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="work.html">Archive</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-          </ul>
-    
-    
-    
-            <script src="lib/jquery-2.1.0.min.js"></script>
-            <script src="src/js/jquery.swipebox.js"></script>
-            <script type="text/javascript">
-            $( document ).ready(function() {
-        
-                    /* Basic Gallery */
-                    $( '.swipebox' ).swipebox();
-              });
-            </script>
-            <script>
-                /* Open the sidenav */
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "100%";
-                }
-              
-                /* Close/hide the sidenav */
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                }
+            </ul>
+        </nav>
+    </div>
 
-                  
-            </script>
-   </body>
-   </html>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^ Top</button>
+
+
+
+    <div class="container-fluid visuals">
+
+
+        <div class="col-sm-12 container header">
+            <h1 class="header_text" id="admiral_header_text">Admiral Gourmet Coffee Co.</h1>
+        </div>
+
+        <div class="visual_caption">
+            <p>Admiral Gourmet Coffee: Richer, Smoother, Better.
+                <br>The design includes: an 8 oz coffee cup, a loyalty card, and a folder.
+                <br>I wanted to create the sense of smoothness and milkiness.
+                <br>The two high contrast yet harmonious spot colors are lively and indicate good energy.
+                <br>Hope you will get inspired and caffeinated!
+                <br><i>Click images to zoom in:)</i>
+            </p>
+        </div>
+
+
+
+        <div class="container grid2">
+            <a href="img/img_coffee/0.jpg" class="swipebox">
+                <img src="img/img_coffee/0.jpg" style="width:280px;"></a>
+
+            <a href="img/img_coffee/2.jpg" class="swipebox">
+                <img src="img/img_coffee/2.jpg" style="width:280px;"></a>
+            <a href="img/img_coffee/3.jpg" class="swipebox">
+                <img src="img/img_coffee/3.jpg" style="width:280px;"></a>
+            <a href="img/img_coffee/1.jpg" class="swipebox">
+                <img src="img/img_coffee/1.jpg" style="width:280px;"></a>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    
+
+
+    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="src/js/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            /* Basic Gallery */
+            $('.swipebox').swipebox();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+
+
+            $('#toggle').click(function () {
+                $(this).toggleClass('active');
+                $('.navoverlay').toggleClass('open');
+            });
+
+
+            var btn = $('#myBtn');
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 900) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '900');
+            });
+
+
+
+        })
+    </script>
+</body>
+
+</html>

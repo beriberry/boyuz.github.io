@@ -1,6 +1,41 @@
 
 /*overallcode*/
 
+h2,h4,p{
+  letter-spacing: 0.05rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  letter-spacing:0.2rem;
+  font-family: adelle, serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a{
+  letter-spacing:0.2rem;
+  font-family: adelle, serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+span{
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+
+}
+
+
 .container{
     padding-left:0;
 }
@@ -205,65 +240,93 @@ h1{
     padding-right:50px;
 }
 
-
-/*navbar*/
-
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 200; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color:rgb(20, 20, 20); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 240px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    padding-left:0;
-}
-  
-/* The navigation menu links */
-.sidenav a {
-    text-decoration: none;
-    font-size: 50px;
-    color:white;
-    display: block;
-    transition: 0.3s;
-    padding-left:15%;
-}
-  
-/* When you mouse over the navigation links, change their color */
- 
-  
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 40px;
-    right: 35px;
-    margin-left: 50px;
-}
-  
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-  
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-
-
-#fp-nav ul li a span{
-    background-color:white;
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color:white;
+  padding-right:5%;
 }
 
 #fp-nav.fp-right {
-    right: 50px;
+  right: 3%;
 }
+
+
+
+
+
+/*Firstpage design*/
+#container1 span{
+  font-size:215px;
+  color:white;
+  z-index: 80;
+  font-weight: 900;
+}
+
+#B{
+  position:absolute;
+  bottom:65%;
+  left:20%;
+}
+
+#O{
+  position:absolute;
+  bottom:65%;
+  left:50%;
+}
+
+#Y{
+  position:absolute;
+  top:55%;
+  left:21%;
+}
+
+#U{
+  position:absolute;
+  top:55%;
+  left:51%;
+}
+
+#container1 h3{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  left:30%;
+  bottom:50%;
+}
+
+
+#typewriter h3 {
+  overflow: hidden;
+  border-right: .15em solid rgb(35, 120, 231); 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret 1s step-end infinite;
+  
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width:344.28px; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(35, 120, 231) }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,8 +372,11 @@ a:hover{
 }
 
 #aboutme a{
-  background-color:rgb(247, 247, 104);
-  color:rgb(20, 20, 20);
+  color:white;
+  letter-spacing:0.2rem;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 27px;
 }
 
 
@@ -322,9 +388,19 @@ a:hover{
 
 #contact h1{
     font-size:80px;
-    padding-top:35%;
     padding-left:8%;
+    letter-spacing: .8rem;
 }
+
+#inquery{
+  padding-top:15%;
+
+}
+
+#insta{
+  padding-top:5%;
+}
+
 
 #contact h2{
     font-size:30px;
@@ -343,14 +419,19 @@ a:hover{
 }
 
 #contact a{
-  background-color:rgb(247, 247, 104);
-  color:rgb(20, 20, 20);
+  color:white;
 }
 
 /*webuxdesign.html*/
 
+#title1 h1{
+  color:rgb(252, 239, 196);
+}
+
+
+
 #webuxdesign{
-  height:2000px;
+  height:2300px;
   background:rgb(20, 20, 20);
 }
 
@@ -358,7 +439,7 @@ a:hover{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 120px;
+  grid-gap: 100px;
   max-width:800px;
 }
 
@@ -596,7 +677,7 @@ hr{
 
 #thrive{
   background-color:rgb(20, 20, 20);
-  height:12000px;
+  height:13000px;
 }
 
 
@@ -735,6 +816,9 @@ flex-direction: row;
 
 /*visualdesign.html*/
 
+#title2 h1{
+  color: #fdc7c7;
+}
 #visualdesign{
   height:2000px;
   background-color:rgb(20,20,20);
@@ -829,11 +913,6 @@ p{
 
 
 
-/*album.html*/
-
-#album_header_text{
-  border-left:20px solid rgb(247, 102, 215);
-}
 
 .webdesignintro h1{
   text-align: center;
@@ -843,23 +922,316 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom:5%;
 }
 
 #webuxdesign{
   padding-top:10%;
 }
 
+.webdesignintro{
+  padding-bottom:5%;
+}
+
+#visualintro{
+  padding-top:10%;
+}
+
+/*scroll indicator*/
+
+.scrollindicator a {
+  font-size:15px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing:0.2rem;
+  font-family: adelle, serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.scrollindicator a:hover {
+  opacity: .5;
+}
+
+
+.scrollindicator a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: scrollicon 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes scrollicon {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes scrollicon {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/*new nav*/
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+.button_container:hover {
+  opacity: .7;
+}
+
+.button_container span {
+  background: white;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
 
 
 
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+
+
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
 
 
 
+.navoverlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+  z-index:50;
+  
+}
+
+.navoverlay {
+  position: fixed;
+  background: rgb(20,20,20);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.navoverlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  padding-top:5%;
+}
+
+.navoverlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.navoverlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+
+
+.navoverlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.navoverlay.open li {
+  -webkit-animation: fadeInRight .5s ease forwards;
+  animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+  animation-delay: .35s;
+  height:100px;
+}
+
+.navoverlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.navoverlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.navoverlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+  animation-delay: .50s;
+}
+
+
+.navoverlay ul li a:hover:after, .navoverlay ul li a:focus:after, .navoverlay ul li a:active:after {
+  width: 100%;
+}
 
 
 
+.navoverlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+.webdesignintro h4{
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+}
 
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+/*backtotop*/
+
+#myBtn {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 32px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+  background:none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  letter-spacing:0.2rem;
+  font-family: adelle, serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+  background-color: rgb(8, 41, 83);
+}
+#myBtn:active {
+  background-color: rgb(8, 41, 83);
+}
+#myBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
@@ -895,6 +1267,8 @@ p{
   #firstline{
     top:50vh;
   }
+
+  
 
   #aboutme h2{
     padding-left:3%;
@@ -969,7 +1343,7 @@ p{
   }
 
   #thrive{
-    height:12200px;
+    height:13000px;
   }
 
 
@@ -1008,7 +1382,7 @@ p{
   }
 
   .grid{
-    grid-gap: 30px;
+    grid-gap: 20px;
     max-width: 400px;
     padding-top:50px;
     padding-left:30px;
@@ -1018,6 +1392,7 @@ p{
     font-size:18px;
   }
 
+ 
   #fullpage{
     display:none;
   }
@@ -1086,7 +1461,19 @@ p{
   .visual_caption{
     padding-left:5%;
   }
+
+  #contact h1{
+    font-size:35px;
+    letter-spacing:0.5rem;
+  }
+  #inquery{
+    padding-top:60%;
+  }
+
+
 }
+
+
 
 
 @media (min-width: 576px) {
@@ -1098,6 +1485,8 @@ p{
  #mobile{
    display:none;
  }
+
+
 }
 
 
@@ -1110,10 +1499,26 @@ p{
   #mobile{
     display:none;
   }
+  
 }
 
 
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  #contact h1{
+    font-size:80px;
+    padding-left:8%;
+    letter-spacing: .8rem;
+}
+
+#inquery{
+  padding-top:20%;
+
+}
+
+#insta{
+  padding-top:5%;
+}
+ }
 
 
 @media (max-width: 1200px) {
@@ -1124,7 +1529,16 @@ p{
     .banneranchor2{
       display:none;
     }
+
+    
+
+
+
+
+
+
  }
+ 
 
 
 

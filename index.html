@@ -17,6 +17,9 @@
       <script src="js/bootstrap.min.js"></script>
       <link href="css/fullpage.css" rel="stylesheet" type="text/css">
       <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://use.typekit.net/lbl1jhl.css">
+
+
 
       <script src="http://scrollmagic.io/js/lib/greensock/TweenMax.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -27,29 +30,37 @@
                                                                                   
   </head>
   <body>
-    <div class="container" id="menu" onclick="openNav()">
-          <div onclick="openNav()">
-          <span class="burger"></span>
-          <span class="burger"></span>
-          <span class="burger"></span> 
-          </div>
-    
+   
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
     </div>
+
+    <div class="navoverlay" id="navoverlay">
+        <nav class="overlay-menu">
+          <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="work.html">Archive</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+
+
+
     <div id="fullpage">
       <div class="section container-fluid active" id="container1">
-        <div class="glitch" id="mememe">
-          <h1>Hello,</h1>
-          <h1>I'm Boyu.</h1>
-          <h2>Product design | Visual design | Illustration</h2>
-        
+        <span class="js-tilt" data-tilt id="B">B</span>
+        <span class="js-tilt" data-tilt id="O">O</span>
+        <div id="typewriter"><h3>Hello, welcome.</h3></div>
+        <span class="js-tilt" data-tilt id="Y">Y</span>
+        <span class="js-tilt" data-tilt id="U">U</span>
+        <div class="scrollindicator">
+            <a href="#page2"><span></span>Scroll</a>
+        </div>
           
-        </div>  
-        
-        <div class="container" id="firstpageimage">
-
-          <img class="js-tilt" data-tilt src="img/firstpageimage.png">
-        </div>  
-
 
 
         
@@ -58,8 +69,8 @@
       </div>
 
       <div class="section" id="container2">
-          <div class="container glitch2" id="webdesignbanner">
-            <div class="banneranchor"><h1>Web/UX Design</h1></div>
+          <div class="container" id="webdesignbanner">
+            <div class="banneranchor" id="title1"><h1>Web/UX Design</h1></div>
             <div class="container grid">
               <div class="container webdesignintro">
                   <h2>As user centered, practical designs based on data and research, 
@@ -105,13 +116,20 @@
 
 
           </div>
+          <div class="scrollindicator">
+            <a href="#page3"><span></span>Scroll</a>
+          </div>
+
       </div>
+
+
+
       <div class="section" id="container3">
           <div class="container glitch3" id="packagedesignbanner">
-            <div class="banneranchor2"><h1>Visual Design</h1></div>
+            <div class="banneranchor2" id="title2"><h1>Visual Design</h1></div>
             <div class="container grid">
               <div class="container webdesignintro">
-                  <h2>Making cool stuff is fun, making fun stuff is cool. These are some of the print design and packaging design I did. </h2>
+                  <h2>Making cool stuff is fun, making fun stuff is cool. These are some of the print design and packaging design I did recently. </h2>
                   <i><h4>Click images to see details:)</h4></i>
                           
               </div>
@@ -206,8 +224,8 @@
           <h1 id="webdesigntextmobile">Web/UX Design</h1>
           <div class="container grid">
             <div class="container webdesignintro">
-                <h2>As user centered, practical designs based on data and research, 
-                these projects include user stories, websites, and prototypes. </h2>
+                <h2>These are user centered, functional, practical design approaches. 
+                The projects include: apps, websites, and prototypes. </h2>
                 <i><h4>Click images to see details</h4></i>
                 
             </div>
@@ -329,13 +347,7 @@
 
 
 
-    <ul id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-    </ul>
+    
 
     <div id="fp-nav" class="fp-right">
         <ul>
@@ -381,16 +393,11 @@
 
 
     <script>
-      /* Open the sidenav */
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
+      
 
-      /* Close/hide the sidenav */
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
 
+
+      /*fullpage thing*/
       new fullpage('#fullpage', {
       licenseKey: '6DAB0A61-96CA4CD5-8F91AD3A-C950565E',
       autoScrolling:true,
@@ -406,7 +413,6 @@
       controlArrows: false,
       resize: false,
 			animateAnchor:false,
-			scrollOverflow: true,
 			responsive: 900,
 			fitSection: false,
 			menu: '#mysidenav',
@@ -421,13 +427,23 @@
 
     <script>
     $(document).ready(function(){
-      $('.js-tilt').tilt({
-        reset: false
-      })
+     
 
       $('.js-tilt').tilt({
-        maxTilt:3
+        reset: true,
+        maxTilt:20,
+        easing:"cubic-bezier(.03,.98,.52,.99)",
+        transition: true,
+
       })
+
+      $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('.navoverlay').toggleClass('open');
+      });
+
+      
+    
     })
     </script>
 

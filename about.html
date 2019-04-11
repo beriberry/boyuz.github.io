@@ -26,50 +26,56 @@
                                                                                     
     </head>
     <body>
-        <div class="container" id="menu" onclick="openNav()">
-            <span class="burger"></span>
-            <span class="burger"></span>
-            <span class="burger"></span> 
-              
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+    
+        <div class="navoverlay" id="navoverlay">
+            <nav class="overlay-menu">
+              <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="work.html">Archive</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
         </div>
         <div class="container-fluid" id="aboutme">
             <img src="img/me2.png">
-            <h2 class="click" id="firstline">I am a product designer based in Seattle, Washington.<br> make websites, design apps, I also make illustrations, posters and prints.
-                <br>All sorts of cool stuff.<br>Some things I enjoy: learning new things, watching horror movies, paingting, gaming.
-                <br>Check out my resume<a href="#">here</a>:)
+            <h2 class="click" id="firstline">I am a product designer based in Seattle, Washington.<br> UX design and web design is my passion, but I also make prints and packaging design.
+                <br>Some things I enjoy doing: learning new things, watching horror movies, paingting, gaming.
+                <br>Check out my resume <a href="resume.pdf">here</a>:)
             
         </div>
 
-        <ul id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-          </ul>
+        
 
 
 
-
-
-
-
-
-
-        <script>
-                /* Open the sidenav */
-                function openNav() {
-                  document.getElementById("mySidenav").style.width = "100%";
-                }
+    <script>
+        $(document).ready(function(){
+               
           
-                /* Close/hide the sidenav */
-                function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-                }
           
-
+          $('#toggle').click(function() {
+              $(this).toggleClass('active');
+              $('.navoverlay').toggleClass('open');
+          });
+          
+                
               
-        </script>
+        })
+    </script>        
+
+
+
+
+
+
+
+       
 
 
     </body>
